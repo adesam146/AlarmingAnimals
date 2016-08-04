@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_animals">
+        <item>Rooster</item>
+        <item>Cockoo</item>
+        <item>Cow</item>
+        <item>Dog</item>
+        <item>Lion</item>
+    </string-array>
+</resources>
