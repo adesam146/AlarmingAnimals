@@ -18,8 +18,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="clock"/>
 
     <Spinner
         android:id="@+id/animals_spinner"
@@ -30,4 +30,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
     </Spinner>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
