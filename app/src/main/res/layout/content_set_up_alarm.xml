@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".SetUpAlarmActivity"
-    tools:showIn="@layout/activity_set_up_alarm">
+    tools:showIn="@layout/activity_set_up_alarm"
+    android:background="@color/colorPrimaryDark">
 
     <TimePicker
         android:layout_width="wrap_content"
@@ -21,21 +22,37 @@
         android:layout_centerHorizontal="true"
         android:timePickerMode="clock"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/pick_an_animal"
+        android:id="@+id/pickAnimal"
+        android:layout_below="@+id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:enabled="false"
+        android:layout_margin="10dp"/>
+
     <Spinner
         android:id="@+id/animals_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:spinnerMode="dropdown"
-        android:layout_below="@+id/timePicker"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_below="@+id/pickAnimal"
+        android:layout_centerHorizontal="true">
     </Spinner>
 
-    <ToggleButton
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/toggleButton"
+        android:switchPadding="20sp"
+        android:id="@+id/alarm_state"
+        android:text="@string/set_up_alarm"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

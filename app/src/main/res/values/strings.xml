@@ -4,4 +4,5 @@
     <string name="set_up_alarm">Set Up Alarm</string>
     <string name="view_alarms">View Alarms</string>
     <string name="title_activity_set_up_alarm">SetUpAlarm</string>
+    <string name="pick_an_animal">Pick An Animal</string>
 </resources>

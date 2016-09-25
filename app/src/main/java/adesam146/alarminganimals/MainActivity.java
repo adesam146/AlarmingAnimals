@@ -14,7 +14,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button setUpAlarm;
-    private Button viewAlarms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
